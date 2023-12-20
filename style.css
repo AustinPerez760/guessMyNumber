@@ -10,3 +10,24 @@ html {
   font-size: 60%;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* MAIN LAYOUT */
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid white;
+}
+
+main {
+  height: 65vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
