@@ -5,6 +5,8 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let score = 5;
 
+let highScore = 0;
+
 //handling on-click for the check buttonß
 document.querySelector('.check').addEventListener('click', function () {
   //converting string to a number and saving as variable
@@ -20,8 +22,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
-    score++;
-    document.querySelector('.score').textContent = score;
+    //Tracking Highscore
+    if (score > highScore) {
+      highScore = score;
+      document.querySelector('.highscore').textContent = highScore;
+    }
 
     //When guess is to high
   } else if (guess > secretNumber) {
