@@ -102,11 +102,13 @@ h1 {
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  text-decoration: none;
 }
 
 .btn:hover {
-  background-color: white;
-  height: 3rem;
+  background-color: rgb(220, 220, 220);
 }
 
 .label-score {
