@@ -28,10 +28,14 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess > secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = '📈 Too High!';
+      document.querySelector('body').style.backgroundColor = '#ff0000';
+      document.querySelector('.number').style.width = '30rem';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
       document.querySelector('.message').textContent = 'GAME OVER ❌';
+      document.querySelector('body').style.backgroundColor = '#808080';
+      document.querySelector('.number').style.width = '30rem';
       document.querySelector('.score').textContent = 0;
     }
 
@@ -39,10 +43,14 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess < secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = '📉 Too Low!';
+      document.querySelector('body').style.backgroundColor = '#ff0000';
+      document.querySelector('.number').style.width = '30rem';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
       document.querySelector('.message').textContent = 'GAME OVER ❌';
+      document.querySelector('body').style.backgroundColor = '#808080';
+      document.querySelector('.number').style.width = '30rem';
       document.querySelector('.score').textContent = 0;
     }
   }
