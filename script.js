@@ -3,7 +3,7 @@
 // Creating a rondom number between 1 and 20, Trunc used to reomce deccimals after whole number
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-let score = 5;
+let score = 10;
 
 let highScore = 0;
 
@@ -62,7 +62,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 // Reseting the game once user clicks "Again" button
 document.querySelector('.again').addEventListener('click', function () {
-  score = 5;
+  score = 10;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector('.message').textContent = 'Start Guessing...';
   document.querySelector('.score').textContent = score;
